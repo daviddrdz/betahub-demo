@@ -13,11 +13,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <title>E-commerce | Ofertas</title>
+    <title>E-commerce | Carrito</title>
 </head>
 
 <body>
-
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="./index.html">E-commerce</a>
@@ -40,14 +39,14 @@
                             Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./productos.html" id="active">
+                        <a class="nav-link" href="./productos.html">
                             <i class='bx bx-store-alt'></i>
                             Productos</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./carrito.html">
+                        <a class="nav-link" aria-current="page" href="./carrito.html" id="active">
                             <i class='bx bx-cart'></i>
                             Carrito</a>
                     </li>
@@ -63,101 +62,57 @@
 
     <div class="divider"></div>
 
-    <main>
-        <div class="productos">
-            <div class="categoria">
-                <h2>Productos</h2>
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Categorias
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="./productos.html">Todos</a></li>
-                        <li><a class="dropdown-item active" href="./ofertas.html">Ofertas</a></li>
-                        <li><a class="dropdown-item" href="./iphone.html">iPhone</a></li>
-                        <li><a class="dropdown-item" href="./samsung.html">Samsung</a></li>
-                    </ul>
+    <div class="cart">
+
+        <div class="elementos">
+            <div id="producto1">
+                <img src="./imagenes/s24.webp">
+                <div class="texto">
+                    <h2>Galaxy S24 Ultra</h2>
+                    <p>Cantidad: 1</p>
+                </div>
+                <div class="valor">
+                    <h3>Precio</h3>
+                    <p>$1620</p>
                 </div>
             </div>
-            <div class="productosdest">
-                <div class="carta" id="iphone11">
-                    <img src="./imagenes/apple-iphone-11-pro-max-64gb.jpeg">
-                    <h3>iPhone 11 Pro Max</h3>
-                    <div class="cajaprecio">
-                        <span class="preciooff">$1200</span>
-                        <span class="descuento">-15%</span>
-                    </div>
-                    <span class="preciodescuento">$1000</span>
-                    <div class="carrito">
-                        <button>
-                            <i class='bx bx-cart'></i>
-                            Agregar al carrito
-                        </button>
-                        <button class="buttonresp">
-                            <i class='bx bx-cart'></i>
-                        </button>
-                    </div>
+            <div id="producto2">
+                <img src="./imagenes/improved_sensor_accuracy_FEATUREBENEFIT-2COLUMN.webp">
+                <div class="texto">
+                    <h2>Galaxy Watch 5 Pro</h2>
+                    <p>Cantidad: 1</p>
                 </div>
-                <div class="carta">
-                    <img src="./imagenes/iphone x.jpeg">
-                    <h3>iPhone X</h3>
-                    <div class="cajaprecio">
-                        <span class="preciooff">$800</span>
-                        <span class="descuento">-10%</span>
-                    </div>
-                    <span class="preciodescuento">$720</span>
-                    <div class="carrito">
-                        <button>
-                            <i class='bx bx-cart'></i>
-                            Agregar al carrito
-                        </button>
-                        <button class="buttonresp">
-                            <i class='bx bx-cart'></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="carta" id="watch5">
-                    <img src="./imagenes/improved_sensor_accuracy_FEATUREBENEFIT-2COLUMN.webp">
-                    <h3>Galaxy Watch 5 Pro</h3>
-                    <div class="cajaprecio">
-                        <span class="preciooff">$800</span>
-                        <span class="descuento">-30%</span>
-                    </div>
-                    <span class="preciodescuento">$550</span>
-                    <div class="carrito">
-                        <button>
-                            <i class='bx bx-cart'></i>
-                            Agregar al carrito
-                        </button>
-                        <button class="buttonresp">
-                            <i class='bx bx-cart'></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="carta" id="a34">
-                    <img src="./imagenes/a34.png">
-                    <h3>Galaxy A34 5G</h3>
-                    <div class="cajaprecio">
-                        <span class="preciooff">$600</span>
-                        <span class="descuento">-30%</span>
-                    </div>
-                    <span class="preciodescuento">$420</span>
-                    <div class="carrito">
-                        <button>
-                            <i class='bx bx-cart'></i>
-                            Agregar al carrito
-                        </button>
-                        <button class="buttonresp">
-                            <i class='bx bx-cart'></i>
-                        </button>
-                    </div>
+                <div class="valor">
+                    <h3>Precio</h3>
+                    <p>$550</p>
                 </div>
             </div>
         </div>
-    </main>
 
-    <div class="divider"></div>
+        <div class="pago">
+            <h2>Detalles</h2>
+            <div class="detalles">
+                <h3>Articulos</h3>
+                <div class="precios">
+                    <p>Galaxy S23 Ultra</p>
+                    <p class="monto">$1620</p>
+                </div>
+
+                <div class="precios">
+                    <p>Galaxy Watch 5 Pro</p>
+                    <p class="monto">$550</p>
+                </div>
+
+                <div class="total">
+                    <p>Total</p>
+                    <p class="monto">$2170</p>
+                </div>
+            </div>
+            <button>Pagar</button>
+        </div>
+    </div>
+
+    <div class=" divider"></div>
 
     <footer>
         <h2>E-commerce</h2>
@@ -236,7 +191,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-
 </body>
 
 </html>

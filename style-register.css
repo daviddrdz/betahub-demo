@@ -136,3 +136,12 @@ button:hover {
         margin: 20px 0;
     }
 }
+
+@media (width <= 420px) {
+    .container {
+        width: 320px;
+    }
+    input {
+        font-size: 15px;
+    }
+}
